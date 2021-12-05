@@ -1,0 +1,25 @@
+.title{
+    color: white;
+    font-size: 150%!important;
+    line-height: 105%!important;
+    margin-left: .75em;
+    flex:1;
+  }
+
+  .highlight{
+      color:tomato;
+  }
+
+  input{
+      background-color: transparent;
+      outline: transparent;
+      border: transparent;
+  }
+
+  .selected-input{
+    color: white;
+    background-color: #40005d;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 12px;
+  }
