@@ -9,6 +9,7 @@ const NewExpense = (props) => {
   let defaultContent = (<div><button onClick={onClickNewExpense} >New Expense</button></div>)
 
   const expense = new Expense('', 0, new Date(Date.now()));
+  expense.id = Math.random().toString();
   const [visibleContent, setVisibleContent] = useState(defaultContent);
 
   function onUpdateExpenseHandler(expense){
