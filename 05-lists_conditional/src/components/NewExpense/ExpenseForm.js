@@ -13,15 +13,7 @@ const ExpenseForm = (props) => {
   
 
   const titleChangeHandler = (event) => {
-    //expense.title = event.target.value;
     setTitle(event.target.value);  
-    // setUserInput({
-    //   ...userInput,
-    //   enteredTitle: event.target.value,
-    // });
-    // setUserInput((prevState) => {
-    //   return { ...prevState, enteredTitle: event.target.value };
-    // });
   };
 
   const amountChangeHandler = (event) => {
@@ -40,6 +32,7 @@ const ExpenseForm = (props) => {
     expense.id = id;
     console.log(expense.toString());
     updateExpense(expense);
+    cancelExpense();
   }
 
   function onClickCancelHandler(event){
