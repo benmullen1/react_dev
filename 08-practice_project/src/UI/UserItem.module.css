@@ -1,0 +1,27 @@
+.useritem {
+    color: var(--color-black);
+    padding-top: 10px;
+  }
+.useritem:last-of-type{
+  padding-bottom: 10px;
+}
+
+.useritemtable{
+    width: 30%;
+    border-style: groove;
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    background-color: var(--color-green);
+  }
+
+.useritemlabel{
+  width: 10%;
+  text-align: left;
+}
+
+.useritemvalue{
+  width: 20%;
+  text-align: left;
+}

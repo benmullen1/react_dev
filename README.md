@@ -8,7 +8,15 @@
 
  - homeproject - not sure
 
- - 04-state - this is the 4-nth modules 
+ - 04-state - 
+ 
+ - 05-lists - the list app, now with card above, and ability to change titles. Most controls do not work still
+
+ - 06-styling - new "todo" app, now with styling work done
+
+ - 08-practice_project - new listing app that does not work for some reason. Unsure if this was submitted.
+
+
 
 ##Building these
 Needs Docker, and no .bat version of the build is yet available
