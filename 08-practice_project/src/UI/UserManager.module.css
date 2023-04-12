@@ -1,0 +1,17 @@
+.usermanager{
+    height: 100%;
+}
+
+.userlist {
+
+    color: var(--color-green);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .userlist__fallback {
+    color: var(--color-tan);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
