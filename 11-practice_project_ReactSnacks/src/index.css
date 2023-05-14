@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  --color-dark-grey: #3f3f3f;     /* background */
+  --color-tan: #F5F7D4;           /* card background */
+  --color-light-green: #E4F132;   /* highlight text on med/dark greens, */
+  --color-med-green: #98CA32;     /* alternate background */
+  --color-dark-green: #559E54;    /* highlight text on tan */
+  --color-black: #0A3409;         /* text on tan/light/med green */
+  
+  
+
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--color-black);
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-dark-grey);
+  height: 100%;
+  width: 100%;
+}
+
+
+

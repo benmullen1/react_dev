@@ -1,0 +1,15 @@
+.platform{
+    height: 100%;
+    display: flex;
+
+}
+
+.left_sidebar { 
+    align-items: flex-start;  
+    width: 20vw;
+    max-width: 20vw;
+}
+
+.content{
+    align-items: flex-end;
+}
