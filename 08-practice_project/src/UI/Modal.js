@@ -1,3 +1,4 @@
+import React from "react";
 import react from "react";
 import Button from "./Button";
 import Card from "./Card";
@@ -10,7 +11,7 @@ const  Modal = (props) => {
     }
 
     return (
-        <div>
+        <React.Fragment>
             <div className={styles.backdrop} onClick={dismissModal}></div>
             <Card className={styles.modal}>
                 <header className={styles.header}> 
@@ -23,7 +24,7 @@ const  Modal = (props) => {
                     <Button onClick={dismissModal}>Dismiss</Button>
                 </footer>
             </Card>
-        </div>
+        </React.Fragment>
     );
 }
 

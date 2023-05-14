@@ -53,7 +53,7 @@ const UserForm = (props) => {
 
 
     return (
-        <div>
+        <React.Fragment>
             {error && <Modal title={error.title} message={error.message} onClick={errorModalHandler}></Modal>}
             <div className={styles.userform} >
                 <form>
@@ -97,7 +97,7 @@ const UserForm = (props) => {
                     <Button onClick={clickHander} >Add User</Button>
                 </form>
             </div>
-        </div>
+        </React.Fragment>
 
     );
 }
