@@ -15,6 +15,7 @@ class CartModel{
         let listIndex:number = this.items.findIndex(listItem => listItem.id === item.id);
         if (listIndex>-1){
             this.items[listIndex].amount += amount;
+            this.items[listIndex].amount = Number.parseInt(this.items[listIndex].amount.toFixed(2));
             this.items[listIndex].updateTime = new Date(Date.now());
             if (this.items[listIndex].amount <=0){
                 console.log("Removed Item " + this.items[listIndex].name + " because amount was " + this.items[listIndex].amount);
@@ -45,8 +46,7 @@ class CartModel{
                 total += (item.amount * item.price);
             })
         }
-        return total;
+        return Number.parseInt(total.toFixed(2));
     }
-
     
 } export default CartModel;

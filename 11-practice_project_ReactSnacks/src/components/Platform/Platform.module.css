@@ -6,10 +6,15 @@
 
 .left_sidebar { 
     align-items: flex-start;  
-    width: 20vw;
-    max-width: 20vw;
+    width: 15em;
 }
 
 .content{
     align-items: flex-end;
+}
+
+.content img {
+    height:5em;
+    width: 5em;
+    object-fit: scale-down;
 }

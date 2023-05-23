@@ -8,12 +8,12 @@
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    background: var(--color-med-green);
-    padding: 0 2rem;
+    background: var(--color-tan);
+    padding-top: 2rem;
   }
   
   .footer h1 {
-    color: var(--color-light-green);
+    color: var(--color-med-green);
   }
   
   .main-header :last-child{
@@ -21,7 +21,7 @@
     align-items: center;
   }
   
-  img{
+  .footer img{
     height:5em;
     width: 5em;
     object-fit: scale-down;

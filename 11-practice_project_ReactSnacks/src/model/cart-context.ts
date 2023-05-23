@@ -7,7 +7,8 @@ let model:CartModel = new CartModel(new Array<CartItemModel>());
 
 const CartContext = React.createContext({
     cart:model,
-    updateCart:(item:MenuItemModel, amount:number)=>{}
+    updateCart:(item:MenuItemModel, amount:number)=>{},
+    resetCart:()=>{}
 });
 
 /* function onAddCartItem(item:MenuItemModel, amount:number, updateTime?:Date){

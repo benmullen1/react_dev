@@ -21,8 +21,8 @@
   align-items: center;
 }
 
-img{
-  height:5em;
+.main-header-logo{
+  height: 5em;
   width: 5em;
   object-fit: scale-down;
 }
