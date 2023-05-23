@@ -8,7 +8,7 @@ interface FooterProps{
 
 const Footer = (props:FooterProps) => {
   return (
-    <footer className={classes['main-header']}>
+    <footer className={classes['footer']}>
       <img src="/images/icons/restaurant.png" alt="React Snacks Logo"/>
       <h1>React Snacks.. they're good</h1>     
       

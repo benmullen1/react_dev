@@ -52,6 +52,11 @@ function App() {
       console.log("there are " + cart.items.length + " items in the cart");
   };
 
+  const resetCartHandler = () =>{
+    console.log("Clear Cart");
+    setCartItems(new CartModel(new Array<CartItemModel>()));
+  }
+
   return (
     <AuthContext.Provider value={{
       isLoggedIn: isLoggedIn,
@@ -59,7 +64,8 @@ function App() {
     }}>
       <CartContext.Provider value={{ 
         cart:cart, 
-        updateCart:updateCartHandler
+        updateCart:updateCartHandler,
+        resetCart:resetCartHandler
       }}>
 
       <div className={classes.container}>
