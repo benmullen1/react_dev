@@ -9,12 +9,14 @@ import CartItemModel from './model/CartItemModel';
 import CartModel from './model/CartModel';
 import MenuItemModel from "./model/MenuItemModel";
 import ItemProvider from "./services/ItemProvider"
+import AuthenticationProvider from './services/AuthenticationProvider';
 
 function App() {
 
   let menuItems = ItemProvider.getMenuItems(); 
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
   
   const [cart, setCartItems] = useState<CartModel>(new CartModel(new Array<CartItemModel>()));
 
@@ -27,6 +29,9 @@ function App() {
     if (isLoggedInFlag === '1'){
       setIsLoggedIn(true);
     }
+    else{
+      localStorage.setItem('isLoggedIn','0');
+    }
   }, []); //no dependencies, so only runs once on startup
 
   //setup Menu stuff
@@ -34,10 +39,17 @@ function App() {
   
 
   const loginHandler = (username:string, password:string) => {
-    // We should of course check email and password
-    // But it's just a dummy/ demo anyways
-    setIsLoggedIn(true);
-    localStorage.setItem('isLoggedIn','1');
+    //imagine "LoginProvider" doing something here
+    let token = AuthenticationProvider.authenticate(username, password)
+
+    if (token != null){
+      setIsLoggedIn(true);
+      setUsername(username);
+      localStorage.setItem('isLoggedIn','1');
+    }
+    else{
+      localStorage.setItem('isLoggedIn','0');
+    }
   };
 
   const logoutHandler = () => {
@@ -60,7 +72,9 @@ function App() {
   return (
     <AuthContext.Provider value={{
       isLoggedIn: isLoggedIn,
-      onLogOut: logoutHandler
+      username: username,
+      logout: logoutHandler,
+      login: loginHandler
     }}>
       <CartContext.Provider value={{ 
         cart:cart, 

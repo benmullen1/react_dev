@@ -22,25 +22,4 @@
   color: var(--color-dark-green);
   font-weight: bolder;
 }
-/*
-.nav button {
-  font: inherit;
-  background: var(--color-med-green);
-  border: 1px solid var(--color-med-green);
-  padding: 0.5rem 1.5rem;
-  color: var(--color-light-green);
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
-  border-radius: 20px;
-}
 
-.nav button:focus {
-  outline: none;
-}
-
-.nav button:hover,
-.nav button:active {
-  color: var(--color-tan);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
-}
-*/
